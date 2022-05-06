@@ -1,5 +1,12 @@
 use yew::prelude::*;
-use VideosList::Video;
+
+#[derive(Clone, PartialEq)]
+struct Video {
+    id: usize,
+    title: String,
+    speaker: String,
+    url: String,
+}
 
 #[function_component(App)]
 fn app() -> Html {
